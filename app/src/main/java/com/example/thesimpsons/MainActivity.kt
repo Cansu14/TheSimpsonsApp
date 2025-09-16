@@ -12,6 +12,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.thesimpsons.navigation.NavGraph
+import com.example.thesimpsons.ui.screen.SimpsonDetailScreen
 import com.example.thesimpsons.ui.screen.SimpsonListScreen
 import com.example.thesimpsons.ui.theme.TheSimpsonsTheme
 import com.example.thesimpsons.viewmodel.SimpsonsViewmodel
@@ -25,7 +27,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheSimpsonsTheme {
-                SimpsonListScreen(viewmodel)
+                NavGraph(viewmodel)
             }
         }
     }
